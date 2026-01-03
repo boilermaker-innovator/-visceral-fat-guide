@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visceral Fat Protocol - Complete Guide</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Complete guide to the Japanese visceral fat protocol. Learn about carotenoids, catechins, and the 75% exercise rule that reduced belly fat by 48% in 2 months.">
+    
+    <!-- Open Graph (Facebook, LinkedIn, Messages) -->
+    <meta property="og:title" content="Visceral Fat Protocol - Complete Guide">
+    <meta property="og:description" content="The science behind reducing dangerous belly fat. Carotenoids, green tea catechins, and the 75% movement rule explained.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=630&fit=crop">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Visceral Fat Protocol - Complete Guide">
+    <meta name="twitter:description" content="The science behind reducing dangerous belly fat in 2 months.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=630&fit=crop">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
+        
+        .stats-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .stat {
+            text-align: center;
+            padding: 15px 25px;
+            background: rgba(79, 172, 254, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4facfe;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            position: relative;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .icon-understand { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .icon-diet { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .icon-drink { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .icon-move { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .icon-warning { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .icon-plan { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        
+        .content-text {
+            color: #ccc;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+        
+        /* iTabs Button */
+        .itab-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            margin-left: 4px;
+            vertical-align: middle;
+            transition: all 0.2s ease;
+            border: none;
+            box-shadow: 0 2px 8px rgba(79, 172, 254, 0.4);
+        }
+        
+        .itab-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 15px rgba(79, 172, 254, 0.6);
+        }
+        
+        /* Popup Overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .popup-overlay.active {
+            display: flex;
+        }
+        
+        .popup-content {
+            background: linear-gradient(145deg, #1e3a5f 0%, #0d1b2a 100%);
+            border-radius: 16px;
+            padding: 25px;
+            max-width: 450px;
+            width: 100%;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            position: relative;
+            animation: popIn 0.3s ease;
+        }
+        
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(79, 172, 254, 0.2);
+        }
+        
+        .popup-title {
+            font-size: 1.1rem;
+            color: #4facfe;
+            font-weight: 600;
+        }
+        
+        .popup-close {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #888;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .popup-close:hover {
+            background: rgba(255,100,100,0.2);
+            color: #ff6b6b;
+        }
+        
+        .popup-body {
+            color: #e0e0e0;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .popup-body strong {
+            color: #4facfe;
+        }
+        
+        .popup-tip {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background: rgba(79, 172, 254, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid #4facfe;
+            font-size: 0.9rem;
+        }
+        
+        .popup-tip-label {
+            color: #4facfe;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        
+        /* Highlight terms */
+        .term {
+            color: #4facfe;
+            font-weight: 500;
+            cursor: pointer;
+            border-bottom: 1px dotted rgba(79, 172, 254, 0.5);
+        }
+        
+        /* Action items */
+        .action-list {
+            margin-top: 15px;
+        }
+        
+        .action-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 15px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .action-icon {
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        
+        .action-text {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        
+        .action-text strong {
+            color: #fff;
+        }
+        
+        /* Key number highlights */
+        .key-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: #000;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        
+        /* Daily checklist */
+        .checklist {
+            background: rgba(67, 233, 123, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(67, 233, 123, 0.2);
+        }
+        
+        .checklist-title {
+            color: #43e97b;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .check-item:last-child {
+            border-bottom: none;
+        }
+        
+        .check-box {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #43e97b;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+        
+        .check-box.checked {
+            background: #43e97b;
+        }
+        
+        .check-box.checked::after {
+            content: '✓';
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .check-label {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+        
+        /* Source footer */
+        .source-footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .source-footer a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+        
+        .source-footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .itabs-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: rgba(79, 172, 254, 0.1);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+        
+        .itabs-badge .itab-btn {
+            width: 18px;
+            height: 18px;
+            font-size: 10px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .stats-box {
+                gap: 15px;
+            }
+            
+            .stat {
+                padding: 12px 18px;
+            }
+            
+            .stat-value {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with Jon's stats -->
+        <div class="header">
+            <h1>🎯 Jon's Visceral Fat Protocol</h1>
+            <p style="color: #888; margin-top: 5px;">Your personal guide based on the Japanese study</p>
+            <div class="stats-box">
+                <div class="stat">
+                    <div class="stat-value">185cm</div>
+                    <div class="stat-label">Height</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">126kg</div>
+                    <div class="stat-label">Current</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">48%</div>
+                    <div class="stat-label">Possible reduction in 2 months</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Understanding Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-understand">🧠</div>
+                Understanding the Enemy
+            </div>
+            <div class="content-text">
+                <p>Your belly fat isn't just stored energy. There are two types: <span class="term" onclick="openPopup('subcutaneous')">subcutaneous fat</span><button class="itab-btn" onclick="openPopup('subcutaneous')">i</button> (the pinchable stuff) and <span class="term" onclick="openPopup('visceral')">visceral fat</span><button class="itab-btn" onclick="openPopup('visceral')">i</button> (the dangerous hidden fat).</p>
+                <br>
+                <p><strong>The quick test:</strong> Poke your stomach. If it's soft and jiggly = mostly harmless subcutaneous. If it sticks out hard like a basketball = visceral fat pushing against your organs.</p>
+            </div>
+        </div>
+
+        <!-- Diet Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-diet">🥕</div>
+                Step 1: Cut Off Its Food Supply
+            </div>
+            <div class="content-text">
+                <p>Visceral fat thrives on <span class="term" onclick="openPopup('oxidative')">oxidative stress</span><button class="itab-btn" onclick="openPopup('oxidative')">i</button>. To kill it, you need <span class="term" onclick="openPopup('carotenoids')">carotenoids</span><button class="itab-btn" onclick="openPopup('carotenoids')">i</button> — the pigments that give plants their color.</p>
+            </div>
+            <div class="action-list">
+                <div class="action-item">
+                    <span class="action-icon">✅</span>
+                    <div class="action-text"><strong>Eat these:</strong> Carrots, sweet potatoes, bell peppers, spinach, squash, cabbage, tomatoes</div>
+                </div>
+                <div class="action-item">
+                    <span class="action-icon">❌</span>
+                    <div class="action-text"><strong>Avoid these:</strong> Beige foods — bread, pasta, crackers (they feed the parasite)</div>
+                </div>
+            </div>
+            <p style="margin-top: 15px; color: #888; font-size: 0.9rem;">🔬 Japanese study: 8 weeks of carotenoid-rich vegetables = significant visceral fat reduction</p>
+        </div>
+
+        <!-- Drink Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-drink">🍵</div>
+                Step 2: Block the Enzymes
+            </div>
+            <div class="content-text">
+                <p>Green tea contains <span class="term" onclick="openPopup('catechins')">catechins (EGCG)</span><button class="itab-btn" onclick="openPopup('catechins')">i</button> which do two things: unlock your fat cells for burning AND block <span class="term" onclick="openPopup('lipase')">lipase</span><button class="itab-btn" onclick="openPopup('lipase')">i</button> so you absorb less dietary fat.</p>
+            </div>
+            <div class="action-list">
+                <div class="action-item">
+                    <span class="action-icon">✅</span>
+                    <div class="action-text"><strong>Drink this:</strong> Matcha or Sencha tea (whole leaf = massive catechin dose)</div>
+                </div>
+                <div class="action-item">
+                    <span class="action-icon">❌</span>
+                    <div class="action-text"><strong>Not this:</strong> Bottled green tea from shops (just sugar water)</div>
+                </div>
+                <div class="action-item">
+                    <span class="action-icon">💡</span>
+                    <div class="action-text"><strong>Pro tip:</strong> Add lemon juice to help absorption. No sugar!</div>
+                </div>
+            </div>
+            <p style="margin-top: 15px; color: #888; font-size: 0.9rem;">🔬 12-week study: Catechin-rich green tea significantly reduced visceral fat</p>
+        </div>
+
+        <!-- Movement Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-move">🚴</div>
+                Step 3: The 75% Rule
+            </div>
+            <div class="content-text">
+                <p>Diet shrinks everything. But exercise is the <strong>laser-guided missile</strong> for visceral fat. The magic number: <span class="key-number">75%</span> intensity.</p>
+                <br>
+                <p><strong>The <span class="term" onclick="openPopup('talktest')">Talk Test</span><button class="itab-btn" onclick="openPopup('talktest')">i</button>:</strong></p>
+            </div>
+            <div class="action-list">
+                <div class="action-item">
+                    <span class="action-icon">🎵</span>
+                    <div class="action-text">Can sing a song perfectly? <strong>Too easy</strong></div>
+                </div>
+                <div class="action-item">
+                    <span class="action-icon">🤢</span>
+                    <div class="action-text">Can't speak a word, feel sick? <strong>Too hard</strong></div>
+                </div>
+                <div class="action-item">
+                    <span class="action-icon">✨</span>
+                    <div class="action-text">Can talk in full sentences but sound winded? <strong>PERFECT</strong></div>
+                </div>
+            </div>
+            <p style="margin-top: 15px; color: #4facfe; font-weight: 500;">Target: 3-4 sessions per week, 45 minutes each. Cycling, walking, rowing, swimming — doesn't matter. Just hit that 75%.</p>
+            <p style="margin-top: 10px; color: #888; font-size: 0.9rem;">🔬 The study: 2 sessions/week at 75% for 2 months = <span class="key-number">48%</span> visceral fat reduction + 41% better insulin sensitivity</p>
+        </div>
+
+        <!-- Warning Section -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-warning">⚠️</div>
+                The Trap to Avoid
+            </div>
+            <div class="content-text">
+                <p><strong>Don't starve yourself.</strong> Extreme calorie restriction hits a wall — your body thinks it's dying and holds onto fat.</p>
+                <br>
+                <p>Exercise has NO upper limit for visceral fat loss. The more you do, the more you lose. Diet plateaus. Exercise doesn't.</p>
+                <br>
+                <p><strong>Strategy:</strong> Eat enough nutrient-dense food (carotenoids, protein) to fuel your body. Use movement to create the deficit.</p>
+            </div>
+        </div>
+
+        <!-- Daily Checklist -->
+        <div class="section">
+            <div class="section-title">
+                <div class="section-icon icon-plan">📋</div>
+                Jon's Daily Checklist
+            </div>
+            <div class="checklist">
+                <div class="checklist-title">✨ Tap to track today</div>
+                <div class="check-item">
+                    <div class="check-box" onclick="toggleCheck(this)"></div>
+                    <div class="check-label">Added colorful veg to at least one meal (carrots, peppers, spinach)</div>
+                </div>
+                <div class="check-item">
+                    <div class="check-box" onclick="toggleCheck(this)"></div>
+                    <div class="check-label">Had matcha/sencha instead of second coffee</div>
+                </div>
+                <div class="check-item">
+                    <div class="check-box" onclick="toggleCheck(this)"></div>
+                    <div class="check-label">Avoided beige foods (bread, pasta, crackers)</div>
+                </div>
+                <div class="check-item">
+                    <div class="check-box" onclick="toggleCheck(this)"></div>
+                    <div class="check-label">45 min cardio at 75% (talk test passed)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Source Footer -->
+        <div class="source-footer">
+            <p style="color: #fff; font-size: 1.1rem; margin-bottom: 15px;">📺 Watch the Original Video</p>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-bottom: 15px;">
+                <iframe 
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+                    src="https://www.youtube.com/embed/Wz4yx_tjcv0" 
+                    title="Visceral Fat Protocol"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="itabs-badge" onclick="openPopup('itabs')" style="cursor: pointer;">
+                <button class="itab-btn">i</button>
+                <span>Made with iTabs</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup(event)">
+        <div class="popup-content" onclick="event.stopPropagation()">
+            <div class="popup-header">
+                <div class="popup-title" id="popupTitle">Title</div>
+                <button class="popup-close" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-body" id="popupBody">Content</div>
+        </div>
+    </div>
+
+    <script>
+        // iTabs content database
+        const itabsContent = {
+            subcutaneous: {
+                title: "Subcutaneous Fat",
+                body: `<p>This is the fat you can <strong>pinch</strong> — the soft, jiggly layer just under your skin.</p>
+                       <p style="margin-top: 10px;">Think of it like a <strong>savings account</strong> for energy. It just sits there passively and is mostly harmless from a health perspective.</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">For Jon</div>
+                           Some of your 126kg will be subcutaneous. That's not the dangerous stuff.
+                       </div>`
+            },
+            visceral: {
+                title: "Visceral Fat",
+                body: `<p>The hidden fat wrapped around your <strong>liver, pancreas, and stomach</strong>. You can't pinch it — it's deep inside.</p>
+                       <p style="margin-top: 10px;">Unlike regular fat, visceral fat acts like a <strong>gland</strong>:</p>
+                       <p style="margin-top: 8px;">• Releases inflammatory chemicals<br>• Messes with your hormones<br>• Drives insulin resistance</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">The Good News</div>
+                           It's the easiest fat to burn IF you use the right approach. The Japanese protocol targets this specifically.
+                       </div>`
+            },
+            oxidative: {
+                title: "Oxidative Stress",
+                body: `<p>Think of your cells like a <strong>car engine</strong>. When an engine runs too hot for too long, it starts to rust.</p>
+                       <p style="margin-top: 10px;">That "rust" is oxidative stress. It happens when you have too many <strong>free radicals</strong> (unstable molecules) damaging your cells.</p>
+                       <p style="margin-top: 10px;">Visceral fat <strong>loves</strong> this environment — it thrives on the damage.</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Solution</div>
+                           Carotenoids (colorful veg) act like rust remover, neutralizing the free radicals.
+                       </div>`
+            },
+            carotenoids: {
+                title: "Carotenoids",
+                body: `<p>These are the <strong>pigments</strong> that give plants their vibrant colors:</p>
+                       <p style="margin-top: 10px;">🥕 Orange in carrots<br>🍅 Red in tomatoes<br>🥬 Deep green in spinach</p>
+                       <p style="margin-top: 10px;">In the Japanese study, they found carotenoids:</p>
+                       <p style="margin-top: 8px;">• Neutralize free radicals<br>• Turn ON fat-burning genes<br>• Turn OFF fat-storing genes</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Simple Rule</div>
+                           If the food is colorful (orange, red, green) = good. If it's beige (bread, pasta) = feeds the fat.
+                       </div>`
+            },
+            catechins: {
+                title: "Catechins (EGCG)",
+                body: `<p>A type of <strong>polyphenol</strong> found in green tea. The main one is called EGCG.</p>
+                       <p style="margin-top: 10px;">Think of your fat cells as having a <strong>locked front door</strong>. Catechins help pick the lock so fat can be released and burned.</p>
+                       <p style="margin-top: 10px;">They also work with caffeine — caffeine revs the engine, catechins unlock the fuel tank.</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Why Matcha?</div>
+                           You drink the whole leaf, so you get way more catechins than a regular teabag.
+                       </div>`
+            },
+            lipase: {
+                title: "Lipase Enzyme",
+                body: `<p>Lipase is the enzyme that <strong>breaks down dietary fat</strong> so your body can absorb it.</p>
+                       <p style="margin-top: 10px;">Green tea catechins <strong>inhibit lipase</strong> — basically putting a bouncer at your gut saying "we're not letting all this fat in."</p>
+                       <p style="margin-top: 10px;">Less fat absorbed = less fat stored around your organs.</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Important</div>
+                           This only works with real green tea (matcha/sencha). Bottled stuff from shops is just sugar water.
+                       </div>`
+            },
+            talktest: {
+                title: "The Talk Test",
+                body: `<p>A simple way to know if you're at <strong>75% intensity</strong> without any fancy equipment.</p>
+                       <p style="margin-top: 10px;"><strong>Too Easy:</strong> You can sing a song perfectly — increase intensity</p>
+                       <p style="margin-top: 8px;"><strong>Too Hard:</strong> You can't speak at all, feel like vomiting — slow down</p>
+                       <p style="margin-top: 8px;"><strong>Just Right:</strong> You can talk in full sentences but sound winded, like you just walked up stairs</p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Jon's Target</div>
+                           45 mins, 3-4x per week. Cycling, walking, rowing — doesn't matter. Just pass the talk test.
+                       </div>`
+            },
+            itabs: {
+                title: "What is iTabs?",
+                body: `<p><strong>iTabs</strong> turns complex information into simple, clickable explanations.</p>
+                       <p style="margin-top: 10px;">See those little <strong>ⓘ buttons</strong>? They give you instant context without leaving the page — no googling, no confusion.</p>
+                       <p style="margin-top: 10px; color: #43e97b;"><strong>⚡ This entire guide was created in minutes from just a YouTube link.</strong></p>
+                       <div class="popup-tip">
+                           <div class="popup-tip-label">Learn More</div>
+                           <a href="https://itabs.ai" target="_blank" style="color: #4facfe;">itabs.ai</a>
+                       </div>`
+            }
+        };
+
+        function openPopup(key) {
+            const content = itabsContent[key];
+            if (content) {
+                document.getElementById('popupTitle').textContent = content.title;
+                document.getElementById('popupBody').innerHTML = content.body;
+                document.getElementById('popupOverlay').classList.add('active');
+            }
+        }
+
+        function closePopup(event) {
+            if (!event || event.target === document.getElementById('popupOverlay')) {
+                document.getElementById('popupOverlay').classList.remove('active');
+            }
+        }
+
+        function toggleCheck(element) {
+            element.classList.toggle('checked');
+        }
+
+        // Close popup on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePopup();
+            }
+        });
+    </script>
+</body>
+</html>
