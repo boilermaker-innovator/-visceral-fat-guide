@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visceral Fat Protocol - Quick Reference</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="3-step Japanese protocol to reduce visceral fat by 48% in 2 months. Eat colour, drink matcha, move at 75%.">
+    
+    <!-- Open Graph (Facebook, LinkedIn, Messages) -->
+    <meta property="og:title" content="Visceral Fat Protocol - Quick Reference">
+    <meta property="og:description" content="3-step Japanese protocol to reduce visceral fat by 48% in 2 months. Simple, science-backed guide.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=630&fit=crop">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Visceral Fat Protocol - Quick Reference">
+    <meta name="twitter:description" content="3-step Japanese protocol to reduce visceral fat by 48% in 2 months.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&h=630&fit=crop">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            min-height: 100vh;
+            padding: 15px;
+            color: #fff;
+        }
+        
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, #1e3a5f 0%, #0d1b2a 100%);
+            border-radius: 20px;
+            padding: 25px;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .header h1 { font-size: 1.2rem; color: #4facfe; }
+        .header p { color: #888; font-size: 0.8rem; margin-top: 5px; }
+        
+        .step {
+            display: flex;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        
+        .step:last-of-type { border-bottom: none; }
+        
+        .step-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+        
+        .icon-eat { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .icon-drink { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .icon-move { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+        
+        .step-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .step-detail { color: #aaa; font-size: 0.9rem; line-height: 1.5; }
+        .step-detail strong { color: #fff; }
+        
+        .itab-btn {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .key-stat {
+            background: rgba(79, 172, 254, 0.2);
+            color: #4facfe;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-size: 0.85rem;
+        }
+        
+        .reminder {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(250, 112, 154, 0.1);
+            border-radius: 12px;
+            border-left: 3px solid #fa709a;
+            text-align: center;
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        .reminder strong { color: #fa709a; }
+        
+        .full-guide-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .full-guide-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+        }
+        
+        /* Popup */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .popup-overlay.active { display: flex; }
+        
+        .popup {
+            background: linear-gradient(145deg, #1e3a5f, #0d1b2a);
+            border-radius: 16px;
+            padding: 20px;
+            max-width: 320px;
+            width: 100%;
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+        
+        .popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .popup-title { color: #4facfe; font-weight: 600; }
+        
+        .popup-close {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: #888;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        
+        .popup-body { color: #ccc; font-size: 0.9rem; line-height: 1.6; }
+        .popup-body strong { color: #4facfe; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>🎯 Visceral Fat Protocol</h1>
+            <p>Jon's Quick Reference</p>
+        </div>
+
+        <!-- Step 1: Eat -->
+        <div class="step">
+            <div class="step-icon icon-eat">🥕</div>
+            <div>
+                <div class="step-title">
+                    EAT COLOUR
+                    <button class="itab-btn" onclick="openPopup('eat')">i</button>
+                </div>
+                <div class="step-detail">
+                    <strong>Yes:</strong> Carrots, spinach, peppers, sweet potato<br>
+                    <strong>No:</strong> Beige stuff (bread, pasta, crackers)
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Drink -->
+        <div class="step">
+            <div class="step-icon icon-drink">🍵</div>
+            <div>
+                <div class="step-title">
+                    DRINK MATCHA
+                    <button class="itab-btn" onclick="openPopup('drink')">i</button>
+                </div>
+                <div class="step-detail">
+                    <strong>Yes:</strong> Matcha or Sencha tea + lemon<br>
+                    <strong>No:</strong> Bottled green tea (just sugar water)
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Move -->
+        <div class="step">
+            <div class="step-icon icon-move">🚴</div>
+            <div>
+                <div class="step-title">
+                    MOVE AT 75%
+                    <button class="itab-btn" onclick="openPopup('move')">i</button>
+                </div>
+                <div class="step-detail">
+                    <span class="key-stat">45 min</span> × <span class="key-stat">3-4x week</span><br>
+                    Talk test: Winded but can still talk
+                </div>
+            </div>
+        </div>
+
+        <div class="reminder">
+            <strong>Don't starve yourself.</strong><br>
+            Eat enough fuel. Let movement create the deficit.
+        </div>
+
+        <a href="full-guide.html" class="full-guide-btn">
+            📖 See Full Guide
+        </a>
+    </div>
+
+    <!-- Popups -->
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup()">
+        <div class="popup" onclick="event.stopPropagation()">
+            <div class="popup-header">
+                <div class="popup-title" id="popupTitle"></div>
+                <button class="popup-close" onclick="closePopup()">×</button>
+            </div>
+            <div class="popup-body" id="popupBody"></div>
+        </div>
+    </div>
+
+    <script>
+        const content = {
+            eat: {
+                title: "Why Colour?",
+                body: `<strong>Carotenoids</strong> are the pigments in colourful veg. They:<br><br>
+                       • Kill oxidative stress (which visceral fat loves)<br>
+                       • Turn ON fat-burning genes<br>
+                       • Turn OFF fat-storing genes<br><br>
+                       Japanese study: 8 weeks = significant visceral fat drop.`
+            },
+            drink: {
+                title: "Why Matcha?",
+                body: `<strong>Catechins (EGCG)</strong> in green tea do two things:<br><br>
+                       • Unlock fat cells so they can burn<br>
+                       • Block lipase enzyme (less fat absorbed)<br><br>
+                       Matcha = whole leaf = massive catechin dose.<br>
+                       Caffeine + catechins = one-two punch.`
+            },
+            move: {
+                title: "The 75% Rule",
+                body: `<strong>The Talk Test:</strong><br><br>
+                       🎵 Can sing perfectly = too easy<br>
+                       🤢 Can't speak at all = too hard<br>
+                       ✅ Winded but can talk = PERFECT<br><br>
+                       Study result: 2 months at 75% = <strong>48% visceral fat gone</strong> + 41% better insulin.`
+            }
+        };
+
+        function openPopup(key) {
+            document.getElementById('popupTitle').textContent = content[key].title;
+            document.getElementById('popupBody').innerHTML = content[key].body;
+            document.getElementById('popupOverlay').classList.add('active');
+        }
+
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+        }
+    </script>
+</body>
+</html>
